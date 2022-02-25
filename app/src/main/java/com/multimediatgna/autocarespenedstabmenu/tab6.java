@@ -8,6 +8,7 @@ import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,6 +59,7 @@ public class tab6 extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PACKAGE_NAME = BuildConfig.APPLICATION_ID;
+        Log.d("GABI", "PACKAGE_NAME= "+PACKAGE_NAME);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -73,9 +75,7 @@ public class tab6 extends Fragment {
             @Override
             public void onClick(View view) {
                 VideoView mysimpleVideoView = (VideoView) getActivity().findViewById(R.id.myvideoView);
-                mysimpleVideoView = view.findViewById(R.id.myvideoView);
                 mysimpleVideoView.setVideoURI(Uri.parse("android.resource://" + PACKAGE_NAME + "/" + R.raw.videobuspenedes));
-
                 mysimpleVideoView.start();
             }
         });

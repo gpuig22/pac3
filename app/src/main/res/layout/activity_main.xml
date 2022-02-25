@@ -25,9 +25,12 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
+            android:background="@drawable/gradient"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbarSize="5dp" />
+            app:tabMode="scrollable"
+            android:scrollbarSize="7dp"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager

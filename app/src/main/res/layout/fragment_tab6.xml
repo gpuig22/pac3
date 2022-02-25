@@ -12,8 +12,8 @@
 
     <VideoView
         android:id="@+id/myvideoView"
-        android:layout_width="412dp"
-        android:layout_height="656dp"
+        android:layout_width="0dp"
+        android:layout_height="608dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
