@@ -106,4 +106,8 @@
     <string name="tab_text_2">CONTACTE</string>
     <string name="tab_text_3">HORARIS</string>
     <string name="tab_text_4">SERVEIS</string>
+    <string name="tab_text_5">AUDIO</string>
+    <string name="tab_text_6">VIDEO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

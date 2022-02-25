@@ -1,12 +1,23 @@
 package com.multimediatgna.autocarespenedstabmenu;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.browser.customtabs.CustomTabColorSchemeParams;
+import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +30,7 @@ public class tab3 extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private CardView mycardview;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -58,7 +70,32 @@ public class tab3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab3, container, false);
+
+        View myview = inflater.inflate(R.layout.fragment_tab3, container, false);
+        mycardview = myview.findViewById(R.id.myhorari);
+
+        mycardview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                WebView mysimpleWebView;
+                String myurl = getString(R.string.URLHoraris);
+                int colorInt = Color.parseColor("#bd3f32"); //red
+                CustomTabColorSchemeParams defaultColors = new CustomTabColorSchemeParams.Builder()
+                        .setToolbarColor(colorInt)
+                        .build();
+                Log.i("Test", "CustomTabColorSchemeParams defaultColors = executed");
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                Log.i("Test", "CustomTabsIntent.Builder builder = executed");
+                CustomTabsIntent customTabsIntent = builder.build();
+                Log.i("Test", "CustomTabsIntent customTabsIntent = executed");
+                builder.setDefaultColorSchemeParams(defaultColors);
+                Log.i("Test", "builder.setDefaultColorSchemeParams(defaultColors) executed");
+                customTabsIntent.launchUrl(getContext(), Uri.parse(myurl));
+                Log.i("Test", "customTabsIntent.launchUrl(getContext(), Uri.parse(myurl) = executed");
+
+
+            }
+        });
+        return myview;
     }
 }

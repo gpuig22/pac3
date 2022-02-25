@@ -7,27 +7,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".tab3"
+    tools:context=".tab6"
     tools:ignore="ExtraText">
 
+    <VideoView
+        android:id="@+id/myvideoView"
+        android:layout_width="412dp"
+        android:layout_height="656dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.059" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/myhorari"
-
-        android:layout_width="155dp"
-        android:layout_height="139dp"
+        android:id="@+id/myvideo"
+        android:layout_width="192dp"
+        android:layout_height="54dp"
         android:layout_margin="5dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="499dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="587dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:backgroundTint="#FDFCFC"
         app:cardMaxElevation="7dp"
         card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintTop_toTopOf="parent">
+        card_view:layout_constraintTop_toBottomOf="@+id/myvideoView">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -41,15 +49,15 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center"
-                android:contentDescription="@string/Horaris"
-                android:src="@drawable/horarios" />
+                android:contentDescription="@string/video"
+                android:src="@drawable/video" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/montserrat_alternates_bold"
-                android:text="@string/Horaris"
+                android:text="@string/video"
                 android:textAlignment="center" />
 
         </LinearLayout>

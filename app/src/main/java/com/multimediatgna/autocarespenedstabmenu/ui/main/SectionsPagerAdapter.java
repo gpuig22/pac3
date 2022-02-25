@@ -14,6 +14,8 @@ import com.multimediatgna.autocarespenedstabmenu.tab1;
 import com.multimediatgna.autocarespenedstabmenu.tab2;
 import com.multimediatgna.autocarespenedstabmenu.tab3;
 import com.multimediatgna.autocarespenedstabmenu.tab4;
+import com.multimediatgna.autocarespenedstabmenu.tab5;
+import com.multimediatgna.autocarespenedstabmenu.tab6;
 
 
 /**
@@ -23,7 +25,7 @@ import com.multimediatgna.autocarespenedstabmenu.tab4;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3, R.string.tab_text_4};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3, R.string.tab_text_4,R.string.tab_text_5,R.string.tab_text_6};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -50,6 +52,12 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 3:
                 myfragment = tab4.newInstance("","");
                 break;
+            case 4:
+                myfragment = tab5.newInstance("","");
+                break;
+            case 5:
+                myfragment = tab6.newInstance("","");
+                break;
         }
         return myfragment;
     }
@@ -62,7 +70,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // Show 2 total pages.
-        return 4;
+
+        return 6;
     }
 }

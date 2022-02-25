@@ -8,11 +8,13 @@
         <entry key="..\:/AndroidProjects/AutocaresPenedsTabMenu/app/src/main/res/layout/fragment_tab1.xml" value="0.25769927536231885" />
         <entry key="..\:/AndroidProjects/AutocaresPenedsTabMenu/app/src/main/res/layout/fragment_tab2.xml" value="0.33" />
         <entry key="..\:/AndroidProjects/AutocaresPenedsTabMenu/app/src/main/res/layout/fragment_tab3.xml" value="0.2751322751322751" />
-        <entry key="..\:/AndroidProjects/AutocaresPenedsTabMenu/app/src/main/res/layout/fragment_tab4.xml" value="0.25769927536231885" />
+        <entry key="..\:/AndroidProjects/AutocaresPenedsTabMenu/app/src/main/res/layout/fragment_tab4.xml" value="0.5" />
+        <entry key="..\:/AndroidProjects/AutocaresPenedsTabMenu/app/src/main/res/layout/fragment_tab5.xml" value="0.75" />
+        <entry key="..\:/AndroidProjects/AutocaresPenedsTabMenu/app/src/main/res/layout/fragment_tab6.xml" value="0.2" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

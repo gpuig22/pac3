@@ -7,12 +7,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".tab3"
+    tools:context=".tab5"
     tools:ignore="ExtraText">
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/myhorari"
+        android:id="@+id/mysonido"
 
         android:layout_width="155dp"
         android:layout_height="139dp"
@@ -41,15 +41,15 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center"
-                android:contentDescription="@string/Horaris"
-                android:src="@drawable/horarios" />
+                android:contentDescription="@string/Sonido"
+                android:src="@drawable/sonido" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/montserrat_alternates_bold"
-                android:text="@string/Horaris"
+                android:text="@string/Sonido"
                 android:textAlignment="center" />
 
         </LinearLayout>
