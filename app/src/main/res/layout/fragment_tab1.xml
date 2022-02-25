@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient"
+    tools:context=".tab1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="275dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="373dp"
+            android:layout_height="329dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:fontFamily="@font/raleway"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="A Autocars del Penedes som una companyia familiar de 4 generacions, il·lusionats i apassionats pel que fem. Amb 10 valors que considerem imprescindibles per la feina que fem. Tenim una actitud curiosa, creativa i innovadora dirigida cap a una mobilitat col·lectiva i equilibrada. Enfocats per aconseguir no nomes l’exit de la companyia, sinó també l’èxit de cada persona,dins i fora d’aquesta, oferint solucions flexibles i socials. La nostra organització multidisciplinària, orgànica i líquida genera un ecosistema sostenible i evolutiu per la millora de les persones.Incloure les nostres tasques dins una acció sistèmica i al intentar recollir les sensacions intangibles d’usuaris i clients, ens permet ser molt propers i poder conèixer la realitat i necessitats dels serveis i les persones.A Autocars del Penedès fem de la transparència, la comunicació i la proximitat una forma de ser,juntament amb una condició humana híbrida i responsable. Positivitat per tothom. Més x Més.    "
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="189dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:fontFamily="@font/raleway"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:text="VISIÓ \nLa llibertat de la mobilitat equilibrada i col·lectiva.  "
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+        <TextView
+            android:id="@+id/editTextTextMultiLine3"
+            android:layout_width="184dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:fontFamily="@font/raleway"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:text="MISSIÓ \n Perseverar per oferir la connexió necessària per cada persona."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
