@@ -1,4 +1,4 @@
-package com.multimediatgna.autocarespenedstabmenu.ui.main;
+package com.multimediatgna.pac3.ui.main;
 
 import android.content.Context;
 
@@ -8,14 +8,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.multimediatgna.autocarespenedstabmenu.R;
+import com.multimediatgna.pac3.R;
 
-import com.multimediatgna.autocarespenedstabmenu.tab1;
-import com.multimediatgna.autocarespenedstabmenu.tab2;
-import com.multimediatgna.autocarespenedstabmenu.tab3;
-import com.multimediatgna.autocarespenedstabmenu.tab4;
-import com.multimediatgna.autocarespenedstabmenu.tab5;
-import com.multimediatgna.autocarespenedstabmenu.tab6;
+import com.multimediatgna.pac3.tab1;
+import com.multimediatgna.pac3.tab2;
+import com.multimediatgna.pac3.tab3;
+import com.multimediatgna.pac3.tab4;
+import com.multimediatgna.pac3.tab5;
+import com.multimediatgna.pac3.tab6;
+import com.multimediatgna.pac3.tab7;
 
 
 /**
@@ -25,7 +26,7 @@ import com.multimediatgna.autocarespenedstabmenu.tab6;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3, R.string.tab_text_4,R.string.tab_text_5,R.string.tab_text_6};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3, R.string.tab_text_4,R.string.tab_text_5,R.string.tab_text_6,R.string.tab_text_7};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -58,6 +59,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 5:
                 myfragment = tab6.newInstance("","");
                 break;
+            case 6:
+                myfragment= tab7.newInstance("","");
+                break;
         }
         return myfragment;
     }
@@ -70,7 +74,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-
-        return 6;
+        return 7;
     }
 }

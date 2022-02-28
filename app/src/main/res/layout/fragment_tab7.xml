@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient"
+    tools:context=".tab1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="409dp"
+            android:layout_height="445dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="285dp" />
+
+        <TextView
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="413dp"
+            android:layout_height="284dp"
+            android:ems="10"
+            android:fontFamily="@font/raleway"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="NOU SISTEMA DE MOBILITAT SOSTENIBLE\n
+PASBUS és un nou sistema de transport col·lectiu amb el qual l'usuari/a tria l'origen, el destí, la freqüència horària i la parada oficial on vol que sigui recollit/da. Per donar un servei global, personalitzat, ecològic i econòmic.\n\n
+
+Una vegada sàpigues el destí i l'hora que que ha d'estar allà, selecciona la seva freqüència, la parada d'orígen (la més propera del teu punt d'orígen) i la parada destí (la més propera al teu punt de destinació).\n\n
+
+COM FUNCIONA?\n
+Es pot fer la sol.licitud per telèfon, SMS o email. Pròximament també des de la webApp.
+Màxim fins les 20h del dia abans.\n\n
+INDICANT:\n\n"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

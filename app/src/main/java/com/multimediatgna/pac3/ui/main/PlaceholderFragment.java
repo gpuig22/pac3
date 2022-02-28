@@ -1,4 +1,4 @@
-package com.multimediatgna.autocarespenedstabmenu.ui.main;
+package com.multimediatgna.pac3.ui.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.multimediatgna.autocarespenedstabmenu.R;
-import com.multimediatgna.autocarespenedstabmenu.databinding.FragmentMainBinding;
+import com.multimediatgna.pac3.R;
+import com.multimediatgna.pac3.databinding.FragmentMainBinding;
 
 /**
  * A placeholder fragment containing a simple view.

@@ -1,6 +1,6 @@
-package com.multimediatgna.autocarespenedstabmenu;
+package com.multimediatgna.pac3;
 
-import static com.multimediatgna.autocarespenedstabmenu.R.id.myimageview;
+import static com.multimediatgna.pac3.R.id.myimageview;
 
 import android.Manifest;
 import android.content.Intent;
@@ -17,7 +17,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 /**

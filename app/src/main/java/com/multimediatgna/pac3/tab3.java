@@ -1,7 +1,5 @@
-package com.multimediatgna.autocarespenedstabmenu;
+package com.multimediatgna.pac3;
 
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,27 +14,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link tab4#newInstance} factory method to
+ * Use the {@link tab3#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class tab4 extends Fragment {
+public class tab3 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private CardView mycardview;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private CardView mycardview;
 
-
-    public tab4() {
+    public tab3() {
         // Required empty public constructor
     }
 
@@ -46,11 +42,11 @@ public class tab4 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment tab4.
+     * @return A new instance of fragment tab3.
      */
     // TODO: Rename and change types and number of parameters
-    public static tab4 newInstance(String param1, String param2) {
-        tab4 fragment = new tab4();
+    public static tab3 newInstance(String param1, String param2) {
+        tab3 fragment = new tab3();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -71,21 +67,27 @@ public class tab4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View myview = inflater.inflate(R.layout.fragment_tab4, container, false);
-        mycardview = myview.findViewById(R.id.myserveis);
+        View myview = inflater.inflate(R.layout.fragment_tab3, container, false);
+        mycardview = myview.findViewById(R.id.myhorari);
 
         mycardview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String myurl = new String(getString(R.string.URLServeis));
-                try {
-                    Uri webpage = Uri.parse(myurl);
-                    Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
-                    startActivity(myIntent);
-                } catch (ActivityNotFoundException e) {
-                    Toast.makeText(getActivity(), "No application can handle this request. Please install a web browser or check your URL.",  Toast.LENGTH_LONG).show();
-                    e.printStackTrace();
-                }
+                WebView mysimpleWebView;
+                String myurl = getString(R.string.URLHoraris);
+                int colorInt = Color.parseColor("#bd3f32"); //red
+                CustomTabColorSchemeParams defaultColors = new CustomTabColorSchemeParams.Builder()
+                        .setToolbarColor(colorInt)
+                        .build();
+                Log.i("Test", "CustomTabColorSchemeParams defaultColors = executed");
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                Log.i("Test", "CustomTabsIntent.Builder builder = executed");
+                CustomTabsIntent customTabsIntent = builder.build();
+                Log.i("Test", "CustomTabsIntent customTabsIntent = executed");
+                builder.setDefaultColorSchemeParams(defaultColors);
+                Log.i("Test", "builder.setDefaultColorSchemeParams(defaultColors) executed");
+                customTabsIntent.launchUrl(getContext(), Uri.parse(myurl));
+                Log.i("Test", "customTabsIntent.launchUrl(getContext(), Uri.parse(myurl) = executed");
 
 
             }
