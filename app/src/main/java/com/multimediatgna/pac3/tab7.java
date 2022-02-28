@@ -81,6 +81,11 @@ public class tab7 extends Fragment {
         mypasbusarray.add("Data (dia desitjat)");
         mypasbusarray.add("Motivació (Metge, treball, gestions, ...)");
         mypasbusarray.add("Número de Places");
+        mypasbusarray.add(".");
+        mypasbusarray.add("..");
+        mypasbusarray.add("...");
+        mypasbusarray.add("....");
+        mypasbusarray.add(".....");
         myadapter = new MyRecycleViewAdapter(main,mypasbusarray);
         myrecyclerView.setAdapter(myadapter);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(myrecyclerView.getContext(),1);
